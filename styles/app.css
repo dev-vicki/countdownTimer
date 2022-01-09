@@ -1,0 +1,28 @@
+body {
+    padding: 50px;
+}
+
+.inputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.form-controls{
+    width: 20%;
+}
+
+.inputs .form-controls{
+    margin: 0 15px;
+}
+
+.inputs .form-group {
+    display: inline-flex;
+    margin: 0 15px;
+    align-items: flex-end;
+}
+
+.buttons .btn{
+    margin: 0 15px;
+}
