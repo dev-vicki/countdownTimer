@@ -32,8 +32,6 @@ function initiallyHideButtons(){
       btnStop.style.display = "inline-block";
       btnReset.style.display = "inline-block";
       btnStart.style.display = "none";
-
-
     });
 
     btnPause.addEventListener("click", ()=>{
@@ -51,6 +49,10 @@ function initiallyHideButtons(){
         pause = false;
         updateInputs();
 
+         hoursElement.value = 0;
+         minutesElement.value = 0;
+         secondsElement.value = 0;
+
         btnPause.style.display = "none";
         btnStop.style.display = "none";
         btnReset.style.display = "none";
@@ -58,8 +60,9 @@ function initiallyHideButtons(){
     })
 
     btnReset.addEventListener("click", ()=>{
-        totalSeconds = totalSecondsBackup;
-        updateInputs();
+         totalSeconds = totalSecondsBackup;
+         updateInputs();
+
     })
 }
 
